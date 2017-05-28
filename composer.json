@@ -34,9 +34,11 @@
     ],
     "scripts": {
         "post-install-cmd": [
-            "@composer drupal-scaffold",
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
         ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        "post-update-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        ]
     },
     "extra": {
         "installer-paths": {
