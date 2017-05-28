@@ -1,0 +1,12 @@
+name: 'Procurement Platform'
+type: profile
+version: 8.x-dev
+core: '8.x'
+dependencies:
+
+themes:
+  - bartik
+  - seven
+
+base profile:
+  name: lightning
