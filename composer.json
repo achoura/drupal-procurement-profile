@@ -36,9 +36,6 @@
         "post-install-cmd": [
             "@composer drupal-scaffold",
         ],
-        "post-update-cmd": [
-
-        ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     },
     "extra": {
