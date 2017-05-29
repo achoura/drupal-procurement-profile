@@ -1,12 +1,28 @@
 name: 'Procurement Platform'
 type: profile
 version: 8.x-dev
+description: 'Drupal 8 Procurement Platform'
 core: '8.x'
+
+base profile:
+  name: lightning
+  excluded_dependencies:
+    - lightning_media_instagram
+    - lightning_layout
+    - lightning_landing_page
+
 dependencies:
+  - ctools
+  - rest
+  - path
+  - workbench_moderation
+  - node
+  - taxonomy
+  - datetime
+  - lightning_core
+  - lightning_media
+  - lightning_media_twitter
 
 themes:
   - bartik
   - seven
-
-base profile:
-  name: lightning
